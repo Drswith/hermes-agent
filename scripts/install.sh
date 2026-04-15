@@ -15,6 +15,11 @@
 
 set -e
 
+export UV_INDEX_URL="https://pypi.tuna.tsinghua.edu.cn/simple"
+export NPM_CONFIG_REGISTRY="https://registry.npmmirror.com"
+export PLAYWRIGHT_DOWNLOAD_HOST="https://npmmirror.com/mirrors/playwright"
+export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
+
 # Colors
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -27,7 +32,7 @@ BOLD='\033[1m'
 
 # Configuration
 REPO_URL_SSH="git@github.com:NousResearch/hermes-agent.git"
-REPO_URL_HTTPS="https://github.com/NousResearch/hermes-agent.git"
+REPO_URL_HTTPS="https://ghfast.top/https://github.com/NousResearch/hermes-agent.git"
 HERMES_HOME="$HOME/.hermes"
 INSTALL_DIR="${HERMES_INSTALL_DIR:-$HERMES_HOME/hermes-agent}"
 PYTHON_VERSION="3.11"
